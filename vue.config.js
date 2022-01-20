@@ -11,7 +11,8 @@ module.exports = {
         },
         changeOrigin: true
       }
-    }
+    },
+    historyApiFallback: true
   },
   // publicPath: './',
   // configureWebpack: {
