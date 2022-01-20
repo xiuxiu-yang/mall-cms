@@ -21,8 +21,8 @@ const store = createStore<IRootState>({
   }
 })
 
-export function setupLocal() {
-  store.dispatch('login/lodingLocalLogin')
+export async function setupLocal() {
+  await store.dispatch('login/lodingLocalLogin')
   store.dispatch('system/getDataList', {
     pageName: 'department',
     data: { size: 100, offset: 0 }

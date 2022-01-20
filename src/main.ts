@@ -8,13 +8,13 @@ import rootApp from './App.vue'
 
 import router from './router'
 import store from './store'
-// import { setupLocal } from './store'
+import { setupLocal } from './store'
 
 const app: App = createApp(rootApp)
 
 app.use(globalRegister)
 app.use(store)
-// setupLocal()
+setupLocal()
 app.use(router)
 
 app.mount('#app')
